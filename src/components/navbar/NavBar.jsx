@@ -6,7 +6,7 @@ import './NavBar.scss'
 
 import gitHubLogo from '../assets/logos/img-github-30.png'
 import linkedinLogo from '../assets/logos/img-linkedin-30.png'
-import linkedinLogo1 from '../assets/logos/img-linkedin-60.png'
+import navbarLogo from '../assets/images/img-3d-design.png'
 
 
 function NavBar() {
@@ -26,7 +26,7 @@ function NavBar() {
         <div className='nav-bar-wrapper'>
             <div className='nav-bar-container'>
                 <div className='nav-bar-logo-container'>
-                    <img src={linkedinLogo1} />
+                    <img src={navbarLogo} alt='navlogo' />
                 </div>
                 <div className='nav-bar-content-container'>
                     <nav>
