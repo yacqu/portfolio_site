@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import Cards from '../../cards/Cards';
 import NavBar from '../../navbar/NavBar';
 import HeroSlide from '../../slides/HeroSlide';
 
@@ -11,6 +12,7 @@ function HomePage() {
       <HomePageWrapper>
         <NavBar />
         <HeroSlide />
+        <Cards />
       </HomePageWrapper>
     </>
   )
