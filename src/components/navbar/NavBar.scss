@@ -1,9 +1,9 @@
 
 $above-nav-bar-bg-color: #b0cdd6;
-$nav-bar-text-color: #e9e5e5;
+$nav-bar-text-color: #5b5b5b;
 $nav-bar-text-font: 'Raleway', sans-serif;
 $nav-bar-text-size: 20px;
-$nav-bar-font-weight: 500;
+$nav-bar-font-weight: 300;
 $nav-bar-text-shadow-color: rgb(143, 143, 143) ;
 $nav-bar-text-shadow: 
     -1px 2px 0 $nav-bar-text-shadow-color,
@@ -71,7 +71,6 @@ $nav-bar-text-shadow:
     font-family: $nav-bar-text-font;
     font-size: $nav-bar-text-size;
     letter-spacing: 1px;
-    text-shadow: $nav-bar-text-shadow;
     font-weight: $nav-bar-font-weight;
 
     nav{
@@ -90,18 +89,18 @@ $nav-bar-text-shadow:
                 list-style: none;
                 text-decoration: none;
                 color: $nav-bar-text-color;
-                
-
+                 &:hover{
+                        transform: scale(1.05);
+                    }
                 a {
                     color: $nav-bar-text-color;
                     text-decoration: none;
-                    
-
                     &:visited {
                         color: $nav-bar-text-color;
-
                     }
+                   
                 }
+
             }
         }
     }
