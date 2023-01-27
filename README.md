@@ -19,7 +19,7 @@ Welcome to my portfolio website! This website showcases my work and achievements
 
 - Clone the repository from GitHub.
 Copy code
-git clone https://github.com/username/portfolio.git
+git clone https://github.com/yacqu/portfolio_site.git
 
 - Navigate to the directory and install the dependencies.
 Copy code
