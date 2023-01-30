@@ -1,25 +1,58 @@
 
-
+$card-btn-bg: gray;
+$card-title-font-family: 'Raleway', sans-serif;
+$card-font-color: #5b5b5b;
 
 .card {
-   
-
+    border: 1px solid #bbb9b9;
+    border-radius: 10px;
+    font-family: $card-title-font-family;
     .card-container{
+        max-width: 300px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
 
-
-        .card-image{
-
-            img{
-
+        .card-text{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                font-weight: 400;
+                color: $card-font-color;
+            }
+            p {
+                font-weight: 400;
+                opacity: 0.9;
+                color: $card-font-color;
             }
         }
-        .card-text{
+        .card-btn {
+            display: flex;
+            justify-content: center;
+            a {
 
-            h2{
-
-            }
-            p{
-
+                button {
+                    background-color: $card-btn-bg;
+                    width: 200px;
+                    height: 50px;
+                    border: none;
+                    font-family: $card-title-font-family;
+                    font-size: 22px;
+                    font-weight: 300;
+                    opacity: 0.9;
+                    color: white;
+                    border-radius: 10px;
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.01);
+                    }
+                }
             }
         }
 
