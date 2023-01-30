@@ -6,15 +6,36 @@ import "./Card.scss";
 import "./Cards.scss";
 
 const Cards = () => {
+
+    const cards = [
+        {
+            title: "title1",
+            text: 'text1',
+            image: "img1",
+            alt: "alt1"
+        },
+        {
+            title: "title2",
+            text: "text2",
+            image: "img2",
+            alt: "alt2",
+        },
+        {
+            title: "title3",
+            text: "text3",
+            image: "img3",
+            alt: "alt3",
+        }
+    ]
+
+
   return (
     <div className="cards">
-        <div className="item">
-            <AppleIcon />
-        <Card  />
-        </div>
-       
-        <Card />
-        <Card />
+        {cards.map((card, index) => (
+            <div className="item">
+                <Card  title={card.title} text={card.text} image={card.image} />
+            </div>
+        ))}
     </div>
   )
 }
@@ -26,12 +47,12 @@ const Card = (props) => {
         <div className="card">
             <div className="card-container">
                 <div className="card-image">
-                    img
+                    {props.icon}
                     <img src={props.image} alt={props.alt} />
                 </div>
                 <div className="card-text">
-                    <h2>title{props.title}</h2>
-                    <p>text{props.text}</p>
+                    <h2>{props.title}</h2>
+                    <p>{props.text}</p>
                 </div>
             </div>
         </div>
